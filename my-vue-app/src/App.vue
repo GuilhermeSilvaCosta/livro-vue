@@ -7,10 +7,10 @@
 </template>
 
 <script>
-  import Materialize from "materialize-css";
   import AppHeader from './layout/AppHeader.vue'
   import AppContent from './layout/AppContent.vue'
   import AppFooter from './layout/AppFooter.vue'
+  import Materialize from 'materialize-css';
 
   export default {
     components:{

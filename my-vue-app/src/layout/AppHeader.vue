@@ -3,9 +3,9 @@
 		<div class="nav-wrapper">
 			<a href="#" class="brand-logo">Logo</a>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href="sass.html">Sass</a></li>
-				<li><a href="badges.html">Components</a></li>
-				<li><a href="collapsible.html">JavaScript</a></li>
+				<router-link tag="li" to="/"><a>Home</a></router-link>
+				<router-link tag="li" to="/card"><a>Card</a></router-link>
+				<router-link tag="li" to="/buttons"><a>Buttons</a></router-link>
 			</ul>
 		</div>
 	</nav>
