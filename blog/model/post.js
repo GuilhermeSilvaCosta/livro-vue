@@ -3,6 +3,7 @@ let Schema = mongoose.Schema;
 
 let postSchema = new Schema({
     title: String,
+    text: String,
     author: String,
     body: String,
     user: {type: mongoose.Schema.Types.ObjectId, ref: 'User'},

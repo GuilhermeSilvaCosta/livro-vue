@@ -51,6 +51,7 @@ router.use(function(req, res, next) {
 const auth = function(req, res, next) {
     const token = req.body.token || req.query.token 
     || req.headers['x-access-token'];
+    console.log('req.body.token', req.body.token);
     if (token) {
         jwt.verify(token, secretKey, function(err, decoded) {
             if (err) {
@@ -126,7 +127,7 @@ router.route('/login')
             if (user != null) {                
                 const token = jwt.sign(user.toJSON(), secretKey, {
                     expiresIn: '1h'
-                });
+                });token
                 console.log('token', token);
                 res.json({ user: user, token: token });
             }else{
